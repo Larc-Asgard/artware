@@ -99,7 +99,6 @@ class XYGraph(QWidget):
                 self.currentHandle = None
             self.update()
 
-
     def mouseReleaseEvent(self, event):
         if self.currentHandle != None:
             self.currentHandle = None
@@ -214,10 +213,7 @@ class MyWin(QWidget):
         self.textbox.move(575, 575)
         self.textbox.resize(200,200)
 
-
-
         self.show()
-
 
 
 if __name__ == '__main__':

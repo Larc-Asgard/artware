@@ -207,7 +207,26 @@ class MyWin(QWidget):
         self.button5.setText(self.text5)
         print ("Button 5: " + self.text5)
 
+    def printprogress1(self):
+        self.number = self.slider1.value()
+        self.text = "%d" %(self.number)
+        print ("Slider 1: " + self.text + "%")
 
+    def printprogress2(self):
+        self.number = self.slider2.value()
+        self.text = "%d" %(self.number)
+        print ("Slider 2: " + self.text + "%")
+
+    def printprogress3(self):
+        self.number = self.slider3.value()
+        self.text = "%d" %(self.number)
+        print ("Slider 3: " + self.text + "%")
+
+    def printdial(self):
+        self.number = self.dial.value()
+        self.text =  "%d" %(self.number)
+        print ("Dial: " + self.text + "%")
+        
     def initGUI(self):
         self.setWindowTitle("The Pure Interaction")
         height = 900
@@ -329,25 +348,6 @@ class MyWin(QWidget):
 
         self.show()
 
-    def printprogress1(self):
-        self.number = self.slider1.value()
-        self.text = "%d" %(self.number)
-        print ("Slider 1: " + self.text + "%")
-
-    def printprogress2(self):
-        self.number = self.slider2.value()
-        self.text = "%d" %(self.number)
-        print ("Slider 2: " + self.text + "%")
-
-    def printprogress3(self):
-        self.number = self.slider3.value()
-        self.text = "%d" %(self.number)
-        print ("Slider 3: " + self.text + "%")
-
-    def printdial(self):
-        self.number = self.dial.value()
-        self.text =  "%d" %(self.number)
-        print ("Dial: " + self.text + "%")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
